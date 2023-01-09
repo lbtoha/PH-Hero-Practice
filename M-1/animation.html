@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @keyframes slider {
+        0% {
+          background-color: green;
+          left: 0;
+          top: 0;
+        }
+        25% {
+          top: 200px;
+        }
+        50% {
+          background-color: red;
+          top: 0px;
+        }
+        100% {
+          left: 500px;
+          top: 200px;
+        }
+      }
+      .box {
+        width: 600px;
+        height: 300px;
+        border: 3px dotted coral;
+        margin: 200px auto;
+      }
+
+      .ball {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background: magenta;
+        border-radius: 50%;
+        animation: slider 1s ease-in-out 0.2s 1000 alternate;
+        animation-play-state: running;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>
