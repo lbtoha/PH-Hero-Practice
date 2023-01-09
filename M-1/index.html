@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .field {
+        height: 350px;
+        border: 3px solid brown;
+      }
+      .bat {
+        transition: transform 0.2s ease-in;
+      }
+
+      .field:hover .bat {
+        transform: rotate(-70deg);
+        transition-property: top right;
+      }
+      .ball {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background: red;
+        position: relative;
+        left: 250px;
+        top: -130px;
+        transition: 1s ease-in-out 0.2s;
+      }
+      .field:hover .ball {
+        transform: translate(600px, -200px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="field">
+      <img class="bat" src="384-3847998_kookaburra-blade-cricket-bat-side-kookaburra-blade-cricket.png" alt="" />
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>
